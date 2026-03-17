@@ -1,39 +1,39 @@
 🔢 CALCULADORA INTERATIVA EM C
 
-Status: Finalizado ✅
+    Status: Finalizado ✅
 
 
-Linguagem: C (GCC)
+    Linguagem: C (GCC)
 
 
 💻 SOBRE O PROJETO
 
-Este é um sistema de calculadora desenvolvido para terminal. O diferencial deste código é o uso do laço do-while, que permite realizar múltiplos cálculos sem reiniciar o programa.
+    Este é um sistema de calculadora desenvolvido para terminal. O diferencial deste código é o uso do laço do-while, que permite realizar múltiplos cálculos sem reiniciar o programa.
 
 
 🛠️ FUNCIONALIDADES
 
-1. Soma: Adição de dois valores reais.
+    1. Soma: Adição de dois valores reais.
 
-2. Subtração: Diferença entre números.
+    2. Subtração: Diferença entre números.
 
-3. Multiplicação: Cálculo de produto.
+    3. Multiplicação: Cálculo de produto.
 
-4. Divisão: Quociente (com trava de segurança para zero).
+    4. Divisão: Quociente (com trava de segurança para zero).
 
-5. Sair: Encerramento do programa.
+    5. Sair: Encerramento do programa.
 
 ⚙️ CONCEITOS APLICADOS
 
-switch-case para o menu.
+    switch-case para o menu.
 
-scanf e printf para interação.
+    scanf e printf para interação.
 
-float para números decimais.
+    float para números decimais.
 
 📄 CÓDIGO FONTE
 
-C
+    C
 ```c
 #include <stdio.h>
 
