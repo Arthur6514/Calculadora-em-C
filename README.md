@@ -27,6 +27,7 @@ float: Suporte para cálculos com casas decimais.
 📄 Código Fonte
 
 C
+```c
 #include <stdio.h>
 
 int main() {
@@ -89,6 +90,7 @@ int main() {
         }
         printf("\n\n");
     } while (opcao != 5);
+```
     
     return 0;
 }
