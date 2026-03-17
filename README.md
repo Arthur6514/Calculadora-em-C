@@ -101,3 +101,4 @@ int main() {
     return 0;
 }
 ```
+💡 Dica: Use um compilador como o GCC para rodar este código localmente.
