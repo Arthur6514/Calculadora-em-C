@@ -1,11 +1,16 @@
-💻 SOBRE O PROJETO
+🔢 Calculadora Interativa em C
 
+Status: Finalizado ✅
+
+Linguagem: C (GCC)
+
+Objetivo: Prática de estruturas de repetição e condicionais.
+
+💻 Sobre o Projeto
 
 Este é um sistema de calculadora desenvolvido para terminal. O diferencial deste código é o uso do laço do-while, que permite que o utilizador realize múltiplos cálculos sem precisar reiniciar o programa a cada operação.
 
-
-🛠️ FUNCIONALIDADES
-
+🛠️ Funcionalidades
 
 O menu interativo oferece as seguintes opções:
 
@@ -19,9 +24,7 @@ O menu interativo oferece as seguintes opções:
 
 5. Sair: Encerramento seguro da aplicação.
 
-
-⚙️ CONCEITOS APLICADOS
-
+⚙️ Conceitos Aplicados
 
 switch-case: Para seleção limpa de opções no menu.
 
@@ -29,11 +32,10 @@ scanf/printf: Para interação fluida com o terminal.
 
 float: Suporte para cálculos com casas decimais.
 
-
-📄 CÓDIGO FONTE
-
+📄 Código Fonte
 
 C
+
 ```c
 #include <stdio.h>
 
@@ -84,11 +86,10 @@ int main() {
             scanf("%f", &n1);
             printf("Digite o segundo numero: ");
             scanf("%f", &n2);
-            if(n2 != 0) {
+            if(n2 != 0)
                 printf("Resultado: %.2f", n1 / n2);
-            } else {
+            else
                 printf("Erro: Divisao por zero!");
-            }
             break;
         case 5:
             printf("Saindo...");
@@ -102,3 +103,5 @@ int main() {
     return 0;
 }
 ```
+
+💡 Dica: Use um compilador como o GCC para rodar este código localmente.
