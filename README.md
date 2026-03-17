@@ -1,12 +1,18 @@
 🔢 CALCULADORA INTERATIVA EM C
+
 Status: Finalizado ✅
+
 
 Linguagem: C (GCC)
 
+
 💻 SOBRE O PROJETO
+
 Este é um sistema de calculadora desenvolvido para terminal. O diferencial deste código é o uso do laço do-while, que permite realizar múltiplos cálculos sem reiniciar o programa.
 
+
 🛠️ FUNCIONALIDADES
+
 1. Soma: Adição de dois valores reais.
 
 2. Subtração: Diferença entre números.
@@ -18,6 +24,7 @@ Este é um sistema de calculadora desenvolvido para terminal. O diferencial dest
 5. Sair: Encerramento do programa.
 
 ⚙️ CONCEITOS APLICADOS
+
 switch-case para o menu.
 
 scanf e printf para interação.
@@ -25,7 +32,9 @@ scanf e printf para interação.
 float para números decimais.
 
 📄 CÓDIGO FONTE
+
 C
+```c
 #include <stdio.h>
 
 int main() {
@@ -89,6 +98,6 @@ int main() {
         }
         printf("\n\n");
     } while (opcao != 5);
-    
     return 0;
 }
+```
