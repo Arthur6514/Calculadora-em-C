@@ -90,7 +90,7 @@ int main() {
         }
         printf("\n\n");
     } while (opcao != 5);
-```
     
     return 0;
 }
+```
