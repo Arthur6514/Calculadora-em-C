@@ -1,41 +1,33 @@
-📖 Descrição do Código
-O programa foi estruturado para ser intuitivo e resiliente. Ele utiliza um menu principal que orienta o usuário através de escolhas numéricas, processando as operações aritméticas básicas de forma instantânea.
+💻 Sobre o Projeto
 
-Principais Componentes Lógicos:
-Menu Dinâmico: Implementado com do-while, garantindo que o programa só feche quando o usuário solicitar.
+Este é um sistema de calculadora desenvolvido para terminal. O diferencial deste código é o uso do laço do-while, que permite que o utilizador realize múltiplos cálculos sem precisar reiniciar o programa a cada operação.
 
-Seleção de Operações: Uso eficiente da estrutura switch-case para direcionar o fluxo de cálculo.
+🛠️ Funcionalidades
 
-Precisão Decimal: Tratamento de números reais (float) com saída formatada para duas casas decimais.
+O menu interativo oferece as seguintes opções:
 
-🌟 Operações Disponíveis
-➕ Soma: Adição simples entre dois valores.
+1. Soma: Adição de dois valores reais.
 
-➖ Subtração: Cálculo de diferença.
+2. Subtração: Operação de diferença entre números.
 
-✖️ Multiplicação: Produto entre os números inseridos.
+3. Multiplicação: Cálculo de produto.
 
-➗ Divisão: Quociente (ideal para cálculos de razão).
+4. Divisão: Quociente entre dois números (com lógica de menu).
 
-🚪 Saída Controlada: Opção para encerrar a execução do programa.
+5. Sair: Encerramento seguro da aplicação.
 
-🛠️ Tecnologias Utilizadas
-Linguagem C (Padrão C99/C11)
+⚙️ Conceitos Aplicados
 
-Biblioteca Standard Input/Output (stdio.h)
+switch-case: Para seleção limpa de opções no menu.
 
-Compilador GCC (recomendado)
+scanf/printf: Para interação fluida com o terminal.
 
-💻 Código Fonte Completo
-Abaixo está o código fonte com a marcação correta para que o GitHub aplique as cores da linguagem C:
+float: Suporte para cálculos com casas decimais.
+
+📄 Código Fonte
 
 C
 #include <stdio.h>
-
-/**
- * @brief Programa de Calculadora Interativa
- * Realiza operações básicas: soma, subtração, multiplicação e divisão.
- */
 
 int main() {
     int opcao;
@@ -60,52 +52,43 @@ int main() {
             scanf("%f", &n1);
             printf("Digite o segundo numero: ");
             scanf("%f", &n2);
-            printf("Resultado da soma: %.2f", n1 + n2);
+            printf("Resultado: %.2f", n1 + n2);
             break;
-
         case 2:
             printf("\n> Operacao: SUBTRACAO\n");
             printf("Digite o primeiro numero: ");
             scanf("%f", &n1);
             printf("Digite o segundo numero: ");
             scanf("%f", &n2);
-            printf("Resultado da subtracao: %.2f", n1 - n2);
+            printf("Resultado: %.2f", n1 - n2);
             break;
-
         case 3:
             printf("\n> Operacao: MULTIPLICACAO\n");
             printf("Digite o primeiro numero: ");
             scanf("%f", &n1);
             printf("Digite o segundo numero: ");
             scanf("%f", &n2);
-            printf("Produto dos dois numeros: %.2f", n1 * n2);
+            printf("Resultado: %.2f", n1 * n2);
             break;
-
         case 4:
             printf("\n> Operacao: DIVISAO\n");
             printf("Digite o primeiro numero: ");
             scanf("%f", &n1);
             printf("Digite o segundo numero: ");
             scanf("%f", &n2);
-            
-            // Verificação básica de divisão por zero
-            if (n2 != 0) {
-                printf("Quociente dos dois numeros: %.2f", n1 / n2);
-            } else {
-                printf("Erro: Divisao por zero nao permitida!");
-            }
+            if(n2 != 0)
+                printf("Resultado: %.2f", n1 / n2);
+            else
+                printf("Erro: Divisao por zero!");
             break;
-
         case 5:
-            printf("\nSaindo do sistema...");
+            printf("Saindo...");
             break;
-
         default:
-            printf("\n[!] Opcao Invalida! Tente uma opcao entre 1 e 5.");
+            printf("Opcao Invalida! Tente novamente.\n");
         }
         printf("\n\n");
     } while (opcao != 5);
     
-    printf("Obrigado por usar a calculadora!\n");
     return 0;
 }
