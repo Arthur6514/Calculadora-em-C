@@ -1,4 +1,4 @@
-#🔢 Calculadora Interativa em C
+🔢 # Calculadora Interativa em C
 
 Status: Finalizado ✅
 
@@ -6,11 +6,11 @@ Linguagem: C (GCC)
 
 Objetivo: Prática de estruturas de repetição e condicionais.
 
-##💻 Sobre o Projeto
+💻 ## Sobre o Projeto
 
 Este é um sistema de calculadora desenvolvido para terminal. O diferencial deste código é o uso do laço do-while, que permite que o utilizador realize múltiplos cálculos sem precisar reiniciar o programa a cada operação.
 
-##🛠️ Funcionalidades
+🛠️ ## Funcionalidades
 
 O menu interativo oferece as seguintes opções:
 
@@ -24,7 +24,7 @@ O menu interativo oferece as seguintes opções:
 
 5. Sair: Encerramento seguro da aplicação.
 
-##⚙️ Conceitos Aplicados
+⚙️ ## Conceitos Aplicados
 
 switch-case: Para seleção limpa de opções no menu.
 
@@ -32,7 +32,7 @@ scanf/printf: Para interação fluida com o terminal.
 
 float: Suporte para cálculos com casas decimais.
 
-##📄 Código Fonte
+📄 ## Código Fonte
 
 C
 
