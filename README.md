@@ -84,10 +84,11 @@ int main() {
             scanf("%f", &n1);
             printf("Digite o segundo numero: ");
             scanf("%f", &n2);
-            if(n2 != 0)
+            if(n2 != 0) {
                 printf("Resultado: %.2f", n1 / n2);
-            else
+            } else {
                 printf("Erro: Divisao por zero!");
+            }
             break;
         case 5:
             printf("Saindo...");
