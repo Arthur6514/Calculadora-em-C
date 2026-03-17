@@ -1,42 +1,31 @@
-🔢 # Calculadora Interativa em C
-
+🔢 CALCULADORA INTERATIVA EM C
 Status: Finalizado ✅
 
 Linguagem: C (GCC)
 
-Objetivo: Prática de estruturas de repetição e condicionais.
+💻 SOBRE O PROJETO
+Este é um sistema de calculadora desenvolvido para terminal. O diferencial deste código é o uso do laço do-while, que permite realizar múltiplos cálculos sem reiniciar o programa.
 
-💻 ## Sobre o Projeto
-
-Este é um sistema de calculadora desenvolvido para terminal. O diferencial deste código é o uso do laço do-while, que permite que o utilizador realize múltiplos cálculos sem precisar reiniciar o programa a cada operação.
-
-🛠️ ## Funcionalidades
-
-O menu interativo oferece as seguintes opções:
-
+🛠️ FUNCIONALIDADES
 1. Soma: Adição de dois valores reais.
 
-2. Subtração: Operação de diferença entre números.
+2. Subtração: Diferença entre números.
 
 3. Multiplicação: Cálculo de produto.
 
-4. Divisão: Quociente entre dois números (com lógica de menu).
+4. Divisão: Quociente (com trava de segurança para zero).
 
-5. Sair: Encerramento seguro da aplicação.
+5. Sair: Encerramento do programa.
 
-⚙️ ## Conceitos Aplicados
+⚙️ CONCEITOS APLICADOS
+switch-case para o menu.
 
-switch-case: Para seleção limpa de opções no menu.
+scanf e printf para interação.
 
-scanf/printf: Para interação fluida com o terminal.
+float para números decimais.
 
-float: Suporte para cálculos com casas decimais.
-
-📄 ## Código Fonte
-
+📄 CÓDIGO FONTE
 C
-
-```c
 #include <stdio.h>
 
 int main() {
@@ -86,10 +75,11 @@ int main() {
             scanf("%f", &n1);
             printf("Digite o segundo numero: ");
             scanf("%f", &n2);
-            if(n2 != 0)
+            if(n2 != 0) {
                 printf("Resultado: %.2f", n1 / n2);
-            else
+            } else {
                 printf("Erro: Divisao por zero!");
+            }
             break;
         case 5:
             printf("Saindo...");
@@ -102,6 +92,3 @@ int main() {
     
     return 0;
 }
-```
-
-💡 Dica: Use um compilador como o GCC para rodar este código localmente.
